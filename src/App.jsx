@@ -1,14 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { useState, useRef } from 'react'
 import './App.css'
 import ColorBends from './components/ColorBends/ColorBends.jsx'
 import Lanyard from './components/Lanyard/Lanyard.jsx'
-
+import VariableProximity from './components/VariableProximity/VariableProximity.jsx';
+import TextType from './components/TextType/TextType.jsx';
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const containerRef = useRef(null);
   return (
     <div className='colorbends-container'> 
       <ColorBends
@@ -17,7 +16,7 @@ function App() {
         speed={0.1}
         scale={1}
         frequency={1}
-        warpStrength={0.95}
+        warpStrength={0.93}
         mouseInfluence={0.2}
         autoRotate = {1}
         parallax={0.5}
@@ -25,6 +24,32 @@ function App() {
         transparent
       />
       <Lanyard position={[0, 0, 20]} gravity={[0, -40, 0]} />
+      <div
+        ref={containerRef}
+        style={{position: 'absolute', top: '55vh', left: '13vw', width: '75vw', height: '100%', pointerEvents: 'none'}}
+        >
+        <div className='glass'>
+          <h1 className='hello'>Hello there!</h1>
+          <TextType 
+            text={["Fellow Designers", "HR Team", "Future Employer", "Random Person on the Internet", "Mom", "Average Matcha Latte Drinker", "Tech Enthusiast", "UI/UX Aficionado"]}
+            typingSpeed={75}
+            pauseDuration={2500}
+            showCursor={true}
+            cursorCharacter="_"
+          />
+          <h1 className='hello'> , I'm a</h1>
+        </div>
+
+        <VariableProximity
+          label={'UIUX Designer'}
+          className={'variable-proximity-demo'}
+          fromFontVariationSettings="'wght' 400, 'opsz' 9"
+          toFontVariationSettings="'wght' 1000, 'opsz' 40"
+          containerRef={containerRef}
+          radius={500}
+          falloff='linear'
+        />
+      </div>
     </div>
   )
 }
