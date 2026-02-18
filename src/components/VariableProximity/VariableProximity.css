@@ -4,6 +4,9 @@
   position: absolute;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 11vw;
+  width: 20%;
+  line-height: 15vh;
+  margin-top: 5vh;
 }
 
 .sr-only {

@@ -69,7 +69,7 @@ button:focus-visible {
 }
 
 .glass {
-  width: 70vw;
+  width: 45vw;
   padding: var(--glass-padding);
   border-radius: var(--glass-radius);
   background: var(--glass-bg);
