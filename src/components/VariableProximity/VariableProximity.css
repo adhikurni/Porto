@@ -4,7 +4,7 @@
   position: absolute;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 11vw;
-  width: 20%;
+  width: 77vw;
   line-height: 11vh;
   margin-top: 3vh;
   margin-left: auto;
@@ -29,5 +29,6 @@
   margin-top: 3vh;
   margin-left: 0;
   margin-right: 0;
+  width: 20%;
   }
 }
