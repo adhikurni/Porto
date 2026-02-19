@@ -6,15 +6,29 @@
   position: absolute;
   max-width: 1440px;
   align-items: center;
-  height: 100vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(1);
   transform-origin: center;
-  transform: translateX(50vw);
+  transform: translateX(0vw);
   margin: auto;
   margin-top: -15vh;
   margin-right: -15vw;
   overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+.lanyard-wrapper {
+    transform: translateX(0vw);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+.lanyard-wrapper {
+    width: 50%;
+    transform: translateX(55vw);
+    height: 100vh;
+  }
 }

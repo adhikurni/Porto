@@ -30,7 +30,7 @@ function App() {
         <div className='colorbends-container'> 
           <div
             ref={containerRef}
-            style={{position: 'absolute', top: '28vh', left: '13vw', width: '75vw', height: '100%', pointerEvents: 'none'}}
+            className='hero-text-wrapper'
             >
             <div className='glass'>
               <h1 className='hello'>Hello there!</h1>
@@ -53,7 +53,7 @@ function App() {
               radius={500}
               falloff='linear'
             />
-            <div style={{marginTop: '45vh'}}>
+            <div style={{marginTop: '50vh'}}>
               <video 
               src="src/assets/Scroll Down.webm"
               width="50"
@@ -69,7 +69,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div style={{width: '40vw'}}>
+      <div className='column2'>
       </div>
       <div style={{backgroundColor: '#002225'}}>
         {/* <CurvedLoop 
