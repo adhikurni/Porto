@@ -11,8 +11,8 @@ function App() {
   const [count, setCount] = useState(0)
   const containerRef = useRef(null);
   return (
-    <div style={{width: '100vw', display: 'flex'}}>
-      <ColorBends
+    <div style={{width: '100vw', display: 'flex', backgroundColor: 'transparent'}}>
+      {/* <ColorBends
         colors={["#ff0000ff", "#15ff00ff", "#2f00ffff"]}
         rotation={-11}
         speed={0.1}
@@ -24,10 +24,10 @@ function App() {
         parallax={0.5}
         noise={0.1}
         transparent
-      />
+      /> */}
       <Lanyard position={[0, 0, 12]} gravity={[0, -40, 0]} />
       <div style={{width: '100vw'}}>
-        <div className='colorbends-container'> 
+        {/* <div className='colorbends-container'> 
           <div
             ref={containerRef}
             className='hero-text-wrapper'
@@ -67,7 +67,7 @@ function App() {
             </div>
 
           </div>
-        </div>
+        </div> */}
       </div>
       <div className='column2'>
       </div>

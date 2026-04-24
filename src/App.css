@@ -4,6 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  background-color: transparent;
+}
+
+body {
+  background-color: transparent;
 }
 
 .logo {
