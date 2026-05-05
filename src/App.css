@@ -1,13 +1,14 @@
+html, body, #root {
+  background-color: transparent !important;
+  background: none !important;
+}
+
 #root {
   margin: 0 auto;
   text-align: center;
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: transparent;
-}
-
-body {
   background-color: transparent;
 }
 
